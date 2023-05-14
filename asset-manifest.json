@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/carnagereaper.github.io/static/css/main.347768f2.css",
-    "main.js": "/carnagereaper.github.io/static/js/main.c609d732.js",
+    "main.css": "/carnagereaper.github.io/static/css/main.7ac3dc7e.css",
+    "main.js": "/carnagereaper.github.io/static/js/main.738f1d3f.js",
     "static/js/787.5eb3de5b.chunk.js": "/carnagereaper.github.io/static/js/787.5eb3de5b.chunk.js",
     "static/media/prof.png": "/carnagereaper.github.io/static/media/prof.70930c9864bd86cfd3ba.png",
     "static/media/text.jpg": "/carnagereaper.github.io/static/media/text.2f35f41bab0820c3f0fb.jpg",
     "index.html": "/carnagereaper.github.io/index.html",
-    "main.347768f2.css.map": "/carnagereaper.github.io/static/css/main.347768f2.css.map",
-    "main.c609d732.js.map": "/carnagereaper.github.io/static/js/main.c609d732.js.map",
+    "main.7ac3dc7e.css.map": "/carnagereaper.github.io/static/css/main.7ac3dc7e.css.map",
+    "main.738f1d3f.js.map": "/carnagereaper.github.io/static/js/main.738f1d3f.js.map",
     "787.5eb3de5b.chunk.js.map": "/carnagereaper.github.io/static/js/787.5eb3de5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.347768f2.css",
-    "static/js/main.c609d732.js"
+    "static/css/main.7ac3dc7e.css",
+    "static/js/main.738f1d3f.js"
   ]
 }
