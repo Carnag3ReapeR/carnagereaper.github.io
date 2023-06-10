@@ -1,6 +1,4 @@
-
 import React from "react";
-import prof from "./Images/text.jpg"
 
 export default function Navbar(){
     return(
