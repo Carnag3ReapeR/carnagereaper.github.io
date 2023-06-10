@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import profilePic from './Images/prof.png'
 import { personalDetails } from './data';
+import { Button } from '@material-tailwind/react';
 
 export default function About() {
     return (
@@ -21,16 +22,15 @@ export default function About() {
                                         className="w-full h-full object-fill"
                                     />
                                 </div>
-                                <br />
-                                <span className='text-slate-950'>Name:</span>
-                                <span className='text-slate-950'>{values.Fullname}</span>
-                                <span className='text-slate-950'>Email: </span>
-                                <br />
-                                <a className='hover:text-red-700' href='mailto:mikhaelinramsaroop@gmail.com'>{values.Email}</a>
-                                <br />
-                                <br />
-                                <span className='text-slate-950 font-bold'>Description: </span>
-                                <p className='text-slate-950 text-justify text-clip p-3'>{values.Description}</p>
+                                <span className='text-blue-gray-600'>Name: {values.Fullname}</span>
+                                <p><span className='text-blue-gray-600'>Email: </span>
+                                    <a className='hover:text-red-700' href='mailto:mikhaelinramsaroop@gmail.com'>{values.Email}</a>
+                                </p>
+                                <span className='text-blue-gray-600 font-bold pt-4'>Description: </span>
+                                <p className='text-blue-gray-600 text-justify text-clip p-2'>{values.Description}</p>
+                            </div>
+                            <div className='space-x-10'>
+                            
                             </div>
                         </div>
 
