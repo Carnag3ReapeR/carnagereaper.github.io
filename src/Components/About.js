@@ -4,7 +4,14 @@ import { personalDetails } from './data';
 import { Button } from '@material-tailwind/react';
 
 export default function About() {
+    const myButton = document.getElementById('btnCV');
+
+    myButton.addEventListener('click', function () {
+        window.open('https://www.google.com')
+    });
+
     return (
+
         <section id="About" className="bg-black body-font border-1">
             {
                 personalDetails.map((values) =>
@@ -30,13 +37,16 @@ export default function About() {
                                 <p className='text-blue-gray-600 text-justify text-clip p-2'>{values.Description}</p>
                             </div>
                             <div className='space-x-10'>
-                            
+                                <Button id='btnCV'>Click Here to open my CV</Button>
                             </div>
+
                         </div>
 
                     </div>
                 )
             }
         </section>
+
     );
+
 }
