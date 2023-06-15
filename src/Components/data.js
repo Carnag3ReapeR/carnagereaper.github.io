@@ -10,11 +10,15 @@ export const personalDetails = [
 export const gamingDetails = [
     {
         IGN: "Carnag3ReapeR"
+        
     }
 ]
 
 export const quickLinks = [
     {
-
+        YoutubeLink:"",
+        TwitchLink:"",
+        LinkdInLink:"",
+        GitHubLink:""
     }
 ]

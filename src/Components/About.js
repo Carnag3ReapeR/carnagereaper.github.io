@@ -1,17 +1,18 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import profilePic from './Images/prof.png'
 import { personalDetails } from './data';
-import { Button } from '@material-tailwind/react';
+import { Button, IconButton } from '@material-tailwind/react';
 
-export default function About() {
+function cv() {
     const myButton = document.getElementById('btnCV');
 
     myButton.addEventListener('click', function () {
         window.open('https://www.google.com')
     });
+}
 
+export default function About() {
     return (
-
         <section id="About" className="bg-black body-font border-1">
             {
                 personalDetails.map((values) =>
@@ -29,15 +30,21 @@ export default function About() {
                                         className="w-full h-full object-fill"
                                     />
                                 </div>
-                                <span className='text-blue-gray-600'>Name: {values.Fullname}</span>
-                                <p><span className='text-blue-gray-600'>Email: </span>
+                                <div className='col-span-3 space-x-2'>
+                                    <FontAwesomeIcon icon="person" />
+                                    <span className='text-blue-gray-600'>Name: {values.Fullname}</span>
+                                </div>
+                                <p className='space-x-2'><FontAwesomeIcon icon="mail-bulk" /><span className='text-blue-gray-600'>Email: </span>
                                     <a className='hover:text-red-700' href='mailto:mikhaelinramsaroop@gmail.com'>{values.Email}</a>
                                 </p>
-                                <span className='text-blue-gray-600 font-bold pt-4'>Description: </span>
-                                <p className='text-blue-gray-600 text-justify text-clip p-2'>{values.Description}</p>
+                                <div className='space-x-2'>
+                                    <FontAwesomeIcon icon='info' />
+                                    <span className='text-blue-gray-600 font-bold pt-4'>Description: </span>
+                                    <p className='text-blue-gray-600 text-justify text-clip p-2'>{values.Description}</p>
+                                </div>
                             </div>
                             <div className='space-x-10'>
-                                <Button id='btnCV'>Click Here to open my CV</Button>
+                                <Button id='btnCV' onClick={cv}>Click Here to open my CV</Button>
                             </div>
 
                         </div>
@@ -46,7 +53,6 @@ export default function About() {
                 )
             }
         </section>
-
     );
 
 }
