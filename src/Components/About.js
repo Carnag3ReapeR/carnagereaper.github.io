@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import profilePic from './Images/prof.png'
 import { personalDetails } from './data';
-import { Button } from '@material-tailwind/react';
+import { Button, Typography } from '@material-tailwind/react';
 
 function cv() {
     const myButton = document.getElementById('btnCV');
@@ -31,7 +31,7 @@ export default function About() {
                                     />
                                 </div>
                                 <div className=' space-x-2 mb-3'>
-                                    <FontAwesomeIcon icon="person" swapOpacity />
+                                    <FontAwesomeIcon icon="person" />
                                     <span className='text-blue-gray-600'>Name: {values.Fullname}</span>
                                 </div>
                                 <div className='mb-3'>
