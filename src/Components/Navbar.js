@@ -70,7 +70,7 @@ export default function Example() {
     }, []);
 
     return (
-        <Navbar className="sticky inset-0 z-10 h-max max-w-full rounded-full py-2 px-4 lg:px-8 lg:py-4 mx-auto bg-black">
+        <Navbar className="sticky inset-0 z-10 h-max max-w-full rounded-3xl py-2 px-4 lg:px-8 lg:py-4 mx-auto bg-black border-blue-gray-500">
             
             <div className="flex items-center justify-center text-blue-gray-300">
                 <Typography
