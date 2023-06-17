@@ -6,6 +6,7 @@ import {
     IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 function NavList() {
     return (
@@ -17,9 +18,9 @@ function NavList() {
                 color="blue-gray"
                 className="p-1 font-medium"
             >
-                <a href="#Skills" className="flex items-center text-blue-gray-300 hover:text-blue-500 transition-colors">
+                <Link to="Skills" className="flex items-center text-blue-gray-300 hover:text-blue-500 transition-colors">
                     Skills
-                </a>
+                </Link>
             </Typography>
             <Typography
                 as="li"
@@ -27,9 +28,9 @@ function NavList() {
                 color="blue-gray"
                 className="p-1 font-medium"
             >
-                <a href="#Contact" className="flex items-center text-blue-gray-300 hover:text-blue-500 transition-colors">
+                <Link to="Contact" className="flex items-center text-blue-gray-300 hover:text-blue-500 transition-colors">
                     Contact
-                </a>
+                </Link>
             </Typography>
             <Typography
                 as="li"
@@ -37,9 +38,9 @@ function NavList() {
                 color="blue-gray"
                 className="p-1 font-medium"
             >
-                <a href="#Videos" className="flex items-center text-blue-gray-300 hover:text-blue-500 transition-colors">
+                <Link to="Videos" className="flex items-center text-blue-gray-300 hover:text-blue-500 transition-colors">
                     Videos
-                </a>
+                </Link>
             </Typography>
             <Typography
                 as="li"
@@ -47,9 +48,9 @@ function NavList() {
                 color="blue-gray"
                 className="p-1 font-medium"
             >
-                <a href="#Test" className="flex items-center text-blue-gray-300 hover:text-blue-500 transition-colors">
+                <Link to="Test" className="flex items-center text-blue-gray-300 hover:text-blue-500 transition-colors">
                     Test
-                </a>
+                </Link>
             </Typography>
         </ul>
     );
@@ -73,22 +74,20 @@ export default function Example() {
         <Navbar className="sticky inset-0 z-10 h-max max-w-full rounded-3xl py-2 px-4 lg:px-8 lg:py-4 mx-auto bg-black border-blue-gray-500">
             
             <div className="flex items-center justify-center text-blue-gray-300">
-                <Typography
-                    as="a"
-                    href="#About"
+                <Link
+                    to="About"
                     variant="h6"
                     className="mr-4 cursor-pointer py-1.5 hover:text-blue-600"
                 >
                     Mikhaelin Ramsaroop
-                </Typography>
-                <Typography
-                    as="a"
-                    href="#Gaming"
+                </Link>
+                <Link
+                    to="Gaming"
                     variant="h6"
                     className="mr-4 cursor-pointer py-1.5 hover:text-blue-600"
                 >
                     Carnag3ReapeR
-                </Typography>
+                </Link>
                 <div className="hidden lg:block">
                     <NavList />
                 </div>

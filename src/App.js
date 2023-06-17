@@ -8,19 +8,24 @@ import Videos from "./Components/Videos"
 import Contact from "./Components/Contact"
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faInfoCircle,faCode,faPerson, faMailBulk, faInfo, faFile, faGamepad, faHeadset} from '@fortawesome/free-solid-svg-icons';
+import { Routes,Route, Navigate } from 'react-router-dom';
 
 function App() {
   library.add(faInfoCircle,faCode,faPerson,faMailBulk,faInfo,faFile,faGamepad,faHeadset)
   return (
-    <main className='text-blue-400 bg-black body-font'> 
-      <Navbar />
-      <Test />
-      <About />
-      <Skills />
-      <Gaming />
-      <Videos />
-      <Contact />
-    </main>
+    <div className='App bg-black text-blue-800'>
+      <Navbar/>
+        <Routes>  
+        <Route path="*" element={<Navigate to="/About" replace />} />        
+          <Route path="/Test" element={<Test/>}/>
+          <Route path="/About" element={<About/>}/>
+          <Route path="/Skills" element={<Skills/>}/>
+          <Route path="/Gaming" element={<Gaming/>}/>
+          <Route path="/Videos" element={<Videos/>}/>
+          <Route path="/Contact" element={<Contact/>}/>
+        </Routes>
+    </div>
+   
   );
 }
 
